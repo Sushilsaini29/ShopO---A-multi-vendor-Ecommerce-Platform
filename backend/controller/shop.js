@@ -39,7 +39,7 @@ router.post("/create-shop", catchAsyncErrors(async (req, res, next) => {
 
     const activationToken = createActivationToken(seller);
 
-    const activationUrl = `https://shopo-dusky.vercel.app/seller/activation/${activationToken}`;
+    const activationUrl = `https://shop-o-a-multi-vendor-ecommerce-platform-1u3n.vercel.app/seller/activation/${activationToken}`;
 
     try {
       await sendMail({
